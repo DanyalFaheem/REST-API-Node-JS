@@ -1,0 +1,28 @@
+GET http://localhost:3000/stands
+
+
+###
+POST http://localhost:3000/stands
+
+{
+    name: "Star Platinum",
+    power: "Speed and Strength",
+    owner: "Kujo Jotaro"
+}
+
+###
+GET http://localhost:3000/stands/6
+
+
+###
+PATCH  http://localhost:3000/stands/6
+Content-Type: application/json
+
+{
+    power: "Time Stop"
+}
+
+
+###
+DELETE http://localhost:3000/stands/6
+
